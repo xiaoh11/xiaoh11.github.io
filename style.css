@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    overflow: hidden;
+}
+.shell{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 3px;
+}
+.shell div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: 30px;
+    letter-spacing: 2px;
+}
+.image{
+    transform: translateZ(-1px) scale(1.6);
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text{
+    height: 50vh;
+    background-color: #fff;
+}
+.text h1{
+    color: #000;
+}
+.text p{
+    color: black;
+    font-size: 1.2vw;
+    letter-spacing: .15vw;
+    margin-left: 5%;
+    margin-right: 5%
+}
+.heading{
+    z-index: -1;
+    transform: translateY(-40vh) translateZ(1px);
+    color: #fff;
+    font-size: 30px;
+}
+.white-text {
+    z-index: -1;
+    transform: translateY(-40vh) translateZ(1px);
+    text-align: center;
+    margin: 1vw 1vw 1vw 1vw;
+}
+.white-text h1 {
+    color: white;
+}
+.white-text p{
+    color: white;
+    font-size: 1vw;
+    letter-spacing: 0vw;
+    margin: 1vw 1vw 1vw 1vw;
+}
+.black-text {
+    z-index: -1;
+    transform: translateY(-40vh) translateZ(1px);
+    font-size: 12px;
+    color: black;
+    text-align: left;
+}
+.bottom-text {
+    position: absolute;
+    bottom: 0;
+}
