@@ -3,7 +3,9 @@
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-content">
-        <h2 class="nav-logo">Hongyu Xiao</h2>
+        <h2 class="nav-logo">
+          <span class="logo-short">HX</span>
+        </h2>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#education">Education</a>
@@ -498,6 +500,83 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-primary);
+  position: relative;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.logo-short {
+  display: none;
+}
+
+/* Rotating Border Light Effect */
+.nav-logo::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 60deg,
+    rgba(0, 113, 227, 0.8) 120deg,
+    rgba(0, 170, 255, 0.9) 160deg,
+    rgba(255, 255, 255, 0.6) 180deg,
+    rgba(0, 170, 255, 0.9) 200deg,
+    rgba(0, 113, 227, 0.8) 240deg,
+    transparent 300deg,
+    transparent 360deg
+  );
+  border-radius: 14px;
+  animation: rotateBorder 4s linear infinite;
+  z-index: -1;
+}
+
+/* Inner background to hide center */
+.nav-logo::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Enhanced glow on hover */
+.nav-logo:hover::before {
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 40deg,
+    rgba(0, 113, 227, 1) 100deg,
+    rgba(0, 170, 255, 1) 140deg,
+    rgba(255, 255, 255, 0.9) 180deg,
+    rgba(0, 170, 255, 1) 220deg,
+    rgba(0, 113, 227, 1) 260deg,
+    transparent 320deg,
+    transparent 360deg
+  );
+  animation: rotateBorder 2s linear infinite;
+}
+
+/* Logo text styling */
+.logo-full,
+.logo-short {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
 }
 
 .nav-links {
@@ -1152,6 +1231,17 @@ body {
     font-size: 0.8rem;
   }
 
+  /* Show HX on mobile */
+  .logo-full {
+    display: none;
+  }
+
+  .logo-short {
+    display: inline;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
   .experience-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1163,6 +1253,10 @@ body {
 
   .section {
     padding: 4rem 1.5rem;
+  }
+
+  .nav-content {
+    padding: 0.8rem 1.5rem;
   }
 }
 
