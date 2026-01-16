@@ -19,8 +19,8 @@
     <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title fade-in">Hongyu Xiao</h1>
-        <p class="hero-subtitle fade-in-delay">M.Sc. in Human Genetics | Computational Genomics</p>
-        <p class="hero-subtext fade-in-delay">McGill University | McMaster University</p>
+        <p class="hero-subtitle fade-in-delay">Human Genetics | Computational Genomics | Bioinformatics</p>
+        <!-- <p class="hero-subtext fade-in-delay">McGill University | McMaster University</p> -->
         <div class="hero-links fade-in-delay-2">
           <a href="https://www.linkedin.com/in/hongyuxiao12138/" target="_blank" class="hero-link">
             <span>LinkedIn</span>
@@ -43,11 +43,11 @@
         <div class="section-content">
           <h2 class="section-title">About Me</h2>
           <p class="section-text">
-            I am a Master's student in Human Genetics at McGill University, specializing in Computational Genomics 
-            and Bioinformatics. My research focuses on developing web-based tools and applications for genomic data 
-            analysis, with expertise in full-stack development, data visualization, and large-scale genomic data processing. 
-            I am passionate about creating accessible and interactive platforms that bridge the gap between complex 
-            genomic datasets and researchers.
+            I thought about I should say something like "I am passionate about blah blah blah and I am keen to blah blah blah ..." <br/>
+            But honestly, that's not who I am. <br/>
+            I want to share something I know but don't want to exaggerate it. <br/>
+            I am not a genius, I am not a master. <br/>
+            I am just a normal guy who is trying to do something I love. <br/>
           </p>
         </div>
       </div>
@@ -63,7 +63,7 @@
           <div class="experience-card">
             <div class="card-image" style="background-image: url('/Figure/flower.jpg')"></div>
             <div class="card-content">
-              <h3>McGill University</h3>
+              <h3>McGill</h3>
               <p class="card-location">Quebec, Canada</p>
               <p class="card-role">M.Sc. in Human Genetics</p>
               <p class="card-text">
@@ -78,7 +78,7 @@
           <div class="experience-card">
             <div class="card-image" style="background-image: url('/Figure/IMG_2787.JPG')"></div>
             <div class="card-content">
-              <h3>McMaster University</h3>
+              <h3>McMaster</h3>
               <p class="card-location">Ontario, Canada</p>
               <p class="card-role">Honours B.Sc. in Neuroscience</p>
               <p class="card-text">
@@ -376,7 +376,7 @@
           <img src="/Figure/voice.png" alt="Music" class="feature-icon music-icon" width="100" height="100"/>
           <h2 class="section-title">Beyond Research</h2>
           <p class="section-text">
-            Research isn't the only thing in my life. I can't imagine my life without music.
+            Research and work aren't the only things in my life and they shouldn't be.
           </p>
           <div class="skills">
             <span class="skill-tag">Guitar</span>
