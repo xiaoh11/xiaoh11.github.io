@@ -12,10 +12,11 @@
             </div>
           </div>
           <div class="card-content">
-            <h3>CARTaGENE Variant Browser</h3>
+            <h3>CARTaGENE Variant Frequency Browser</h3>
             <p class="card-role">TOPMed-BRAVO Based Platform</p>
             <p class="card-text">
               <strong>CARTaGENE Cohort</strong><br/>
+              Supervised by <u>Dr. Daniel Taliun</u> <br/>
               Sole Developer & Maintainer | Sep 2024 – Present<br/><br/>
               <strong>Key Achievements:</strong><br/>
               • Lead developer for Version 1.3.0 (75M+ variants, 2,173 genomes)<br/>
@@ -44,6 +45,7 @@
             <p class="card-role">Stratified GWAS Visualization Platform</p>
             <p class="card-text">
               <strong>Canadian Longitudinal Study on Aging (CLSA)</strong><br/>
+              Supervised by <u>Dr. Daniel Taliun</u> & <u>Dr. Sarah Gagliano Taliun</u><br/>
               Lead Developer & Maintainer | Sep 2024 – Present<br/><br/>
               <strong>Key Achievements:</strong><br/>
               • Full-stack development for stratified GWAS result visualization tool<br/>

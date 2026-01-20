@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="nav-content">
-      <h2 class="nav-logo">
+      <h2 class="nav-logo" @click="handleLogoClick">
         <span class="logo-short">HX</span>
       </h2>
       <div class="nav-links">
@@ -9,6 +9,7 @@
         <a href="#education">Education</a>
         <a href="#research">Research</a>
         <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
@@ -16,7 +17,12 @@
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  methods: {
+    handleLogoClick() {
+      this.$emit('launch-rocket');
+    }
+  }
 }
 </script>
 

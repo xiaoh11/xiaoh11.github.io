@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar @launch-rocket="launchRocket" />
     <Hero />
     <About />
     <Education />
@@ -8,7 +8,9 @@
     <Skills />
     <Beyond />
     <Gallery />
+    <Contact />
     <Footer />
+    <RocketAnimation ref="rocketAnimation" />
   </div>
 </template>
 
@@ -20,8 +22,10 @@ import Education from './components/Education.vue'
 import Research from './components/Research.vue'
 import Skills from './components/Skills.vue'
 import Beyond from './components/Beyond.vue'
+import Contact from './components/Contact.vue'
 import Gallery from './components/Gallery.vue'
 import Footer from './components/Footer.vue'
+import RocketAnimation from './components/RocketAnimation.vue'
 
 export default {
   name: 'App',
@@ -33,8 +37,15 @@ export default {
     Research,
     Skills,
     Beyond,
+    Contact,
     Gallery,
-    Footer
+    Footer,
+    RocketAnimation
+  },
+  methods: {
+    launchRocket() {
+      this.$refs.rocketAnimation.launch();
+    }
   },
   mounted() {
     // Smooth scroll for navigation links

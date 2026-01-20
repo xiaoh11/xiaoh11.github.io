@@ -14,6 +14,7 @@
             <p class="card-text">
               <strong>cGPA: 4.0/4.0</strong><br/>
               Sep 2024 – Present<br/>
+              <em>McGill CERC Program in Genomic Medicine</em><br/>
               Focus: Computational Genomics, Bioinformatics, Web-based Genomic Tools
             </p>
           </div>
