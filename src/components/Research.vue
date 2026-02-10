@@ -29,6 +29,12 @@
               <a href="https://cartagene-bravo.cerc-genomic-medicine.ca/" target="_blank" class="project-btn">
                 🔗 Launch CARTaGENE Variant Frequency Browser
               </a>
+              <a href="https://www.nature.com/articles/s41467-026-68820-7" target="_blank" class="project-btn nature-btn">
+                <svg class="nature-logo" viewBox="0 0 100 100" fill="currentColor">
+                  <text x="10" y="70" font-family="serif" font-weight="bold" font-size="60" font-style="italic">N</text>
+                </svg>
+                <span>Nature Communications Publication</span>
+              </a>
             </div>
           </div>
         </div>
@@ -49,11 +55,15 @@
               Lead Developer & Maintainer | Sep 2024 – Present<br/><br/>
               <strong>Key Achievements:</strong><br/>
               • Full-stack development for stratified GWAS result visualization tool<br/>
+              • Implemented by many different world-wide research groups<br/>
               • Bellavance, J.*, <strong>Xiao, H.*</strong> et al. Exploring and visualizing stratified GWAS results with PheWeb2. Nat Genet (2026).
             </p>
             <div class="project-links">
               <a href="https://clsa-pheweb.cerc-genomic-medicine.ca/" target="_blank" class="project-btn">
                 🔗 Launch CLSA PheWeb 2
+              </a>
+              <a href="https://imaging-pheweb.cerc-genomic-medicine.ca/" target="_blank" class="project-btn">
+                🔗 Launch UKB Imaging PheWeb 2
               </a>
               <a href="https://doi.org/10.1038/s41588-025-02469-8" target="_blank" class="project-btn nature-btn">
                 <svg class="nature-logo" viewBox="0 0 100 100" fill="currentColor">

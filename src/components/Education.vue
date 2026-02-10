@@ -1,5 +1,14 @@
 <template>
   <section id="education" class="section dark">
+    <video 
+      class="background-video" 
+      autoplay 
+      loop 
+      muted 
+      playsinline
+    >
+      <source src="/Video/jimeng-2026-02-09-4246.mp4" type="video/mp4">
+    </video>
     <div class="container">
       <h2 class="section-title-center">Education</h2>
       
@@ -43,6 +52,13 @@
 export default {
   name: 'Education',
   mounted() {
+    const video = document.querySelector('.background-video');
+    if (video) {
+      video.play().catch(err => {
+        console.log('Video autoplay prevented:', err);
+      });
+    }
+
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -100px 0px'
@@ -72,6 +88,8 @@ export default {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s ease, transform 1s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .section.visible {
@@ -84,10 +102,27 @@ export default {
   color: var(--text-primary);
 }
 
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%) scale(1.4);
+  z-index: 0;
+  opacity: 0.3;
+  object-fit: cover;
+  pointer-events: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .section-title-center {
